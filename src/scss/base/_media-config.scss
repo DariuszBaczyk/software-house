@@ -1,0 +1,28 @@
+$media-query-mobiles: 600px;
+$media-query-tablets: 768px;
+$media-query-laptops: 992px;
+$media-query-desctops: 1200px;
+
+@mixin media-mobiles {
+    @media (min-width: #{$media-query-mobiles}) {
+        @content;
+    }
+}
+
+@mixin media-tablets {
+    @media (min-width: #{$media-query-tablets}) {
+        @content;
+    }
+}
+
+@mixin media-laptops {
+    @media (min-width: #{$media-query-laptops}) {
+        @content;
+    }
+}
+
+@mixin media-desctops {
+    @media (min-width: #{$media-query-desctops}) {
+        @content;
+    }
+}

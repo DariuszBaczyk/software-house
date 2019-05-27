@@ -1,0 +1,21 @@
+// ---------- Base ----------
+    @import "base/variables";
+    @import "base/mixins";
+    @import "base/typography";
+    @import "base/media-config";
+
+// ---------- Layout and sections ----------
+    @import "layout/footer";
+    @import "layout/header";
+    @import "layout/main";
+    @import "layout/sections";
+   
+// ---------- Components ----------
+    @import "components/forms";
+    @import "components/buttons";
+    @import "components/icons";
+
+// ---------- Font Awasome ----------
+    @import "vendor/fontawesome/fontawesome";
+    @import "vendor/fontawesome/solid";
+    @import "vendor/fontawesome/brands";

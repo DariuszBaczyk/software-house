@@ -1,0 +1,51 @@
+// Base typografi
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html {
+    font-size: font-size(main);
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: color(main);
+
+    line-height: default(line-height);
+
+    display: grid;  
+}
+
+h2 {
+    font-size: 22px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+
+    color: currentColor;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+// Text colors
+
+.t-text-white {
+    color: $color-white;
+}
+
+.t-text-red {
+    color: $color-red;
+}
+
+// Text align
+
+.t-text-center {
+    text-align: center;
+}
+
+// Hero area text
+

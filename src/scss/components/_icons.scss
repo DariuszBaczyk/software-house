@@ -1,3 +1,34 @@
 .c-icon {
-    
+    padding: 8px;
+}
+
+.c-icon-features-item {
+    color: $color-orange;
+}
+
+.c-icon-services-item {
+    color: $color-gray-darker;
+}
+
+.c-icon-focus-item {
+    text-align: center;
+    color: $color-white;
+    background-color: $color-orange;
+    width: 48px;
+    height: 48px;
+}
+
+
+.c-social-icon {
+    cursor: pointer;
+    color: $color-gray-darker;
+    border: 1px solid $color-gray;
+    border-radius: 25px;
+    padding: 10px;
+
+    &:hover {
+        color: $color-white;
+        background-color: $color-orange;
+        border: none;
+    }
 }

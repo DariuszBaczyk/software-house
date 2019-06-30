@@ -1,0 +1,370 @@
+// ---------- Features start ----------
+.l-features {
+    display: grid;
+    margin: 0 auto;
+    position: relative;
+    background-color: $color-white;
+    padding: 10px 0;
+    z-index: 1;
+    top: -60px;
+    width: $size-feature-width-mobiles;
+    height: $size-feature-height;
+    border-radius: 5px;
+    @include box-shadow(0px, 0px, 25px, 0px, rgba(0,0,0,0.75));
+
+    @include media-laptops {
+        width: $size-feature-width-laptops;
+    }
+}
+
+.l-features__items {
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(3, $size-feature-items-column-width);
+}
+
+.l-features__item {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    @include media-tablets {
+        text-align: start;
+        font-size: 1rem;
+    }
+}
+
+// ---------- Features end ----------
+
+// ---------- About start ----------
+.l-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: $size-about-height;
+    margin: 30px;
+
+    @include media-tablets {
+        grid-template-columns: 0.8fr 1fr;
+        margin: 90px 0 90px;
+    }
+}
+
+.l-about__image {
+    display: none;
+
+    @include media-tablets {
+        display: block;
+        position: relative;
+        max-width: $size-about-image-desktop-width;
+        height: $size-about-image-desktop-height;
+        @include gradient(90deg, url("../images/bg-laptop-and-hands.jpg"), $gradient-transparent-to-white);
+        background-size: cover;
+    }
+}
+
+.l-about__text {
+    display: grid;
+    max-width: $size-about-text;
+    align-content: center;
+
+    @include media-tablets {
+        margin: 10px;
+    }
+    
+}
+
+.l-about__text-main {
+    margin: 25px 0;
+}
+
+.l-about__btn {
+    margin-top: 20px;
+}
+
+// ---------- About end ----------
+
+// ---------- Services start ----------
+.l-services {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: $size-services-height;
+    background-color: $color-gray-brighter;
+    margin: 130px 0;
+}
+
+.l-services__text-content {
+    margin: 30px;
+}
+
+.l-services__items {
+    display: grid;
+    grid-template-columns: $size-services-items-column-width-mobile;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 25px;
+
+    @include media-tablets {
+        grid-template-columns: repeat(2, $size-services-items-column-width);
+    }
+
+    @include media-laptops {
+        grid-template-columns: repeat(4, $size-services-items-column-width);
+    }
+}
+
+.l-services__item {
+    background: $color-white;
+    width: $size-services-item-width;
+    height: $size-services-item-height;
+    color: $color-gray-darker;
+    padding: 20px;
+    text-align: center;
+    @include box-shadow(0px, 0px, 15px, 0px, rgba(0,0,0,0.2));
+
+    &:hover {
+        border-bottom: 3px solid $color-orange;
+
+        .c-icon-services-item {
+            color: $color-orange;
+        }
+
+        .l-services__item_heading {
+            color: $color-black;
+        }
+    }
+}
+
+.l-services__item_heading  {
+    margin: 10px 0 20px;
+}
+
+// ---------- Services end ----------
+
+// ---------- Our Focus start ----------
+.l-focus {
+    display: grid;
+    height: $size-focus-height;
+    align-content: center;
+    padding-bottom: 50px;
+    margin: 80px auto;
+}
+
+.l-focus__headline {
+    text-align: center;
+    margin: 50px;
+}
+
+.l-focus__items {
+    display: grid;
+    grid-template-columns: $size-focus-items-column-width;
+    justify-content: space-around;
+    margin: 15px;
+
+    @include media-laptops {
+        grid-template-columns: repeat(3, $size-focus-items-column-width);
+    }
+}
+
+.l-focus__item {
+    display: grid;
+    justify-items: center;
+    margin: 30px 0;
+}
+
+.l-focus__item_heading {
+    margin: 15px;
+}
+
+// ---------- Our Focus end ----------
+
+// ---------- Menage start ----------
+.l-manage {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: $size-manage-height;
+    margin: 40px 0 60px;
+
+    @include media-tablets {
+        margin: 90px 0;
+    }
+
+    @include media-laptops {
+        grid-template-columns:  1fr 0.8fr;
+    }
+}
+
+.l-manage__image {
+    display: none;
+
+    @include media-laptops {
+        display: grid;
+        position: relative;
+        max-width: $size-manage-image-desktop-width;
+        height: $size-manage-image-desktop-height;
+        @include gradient(90deg, url("../images/bg-laptop-and-fruits.jpg"), $gradient-white-to-transparent);
+        background-size: cover;
+    }
+}
+
+.l-manage__text {
+    display: grid;
+    max-width: $size-manage-text;
+    align-content: center;
+    justify-self: center;
+    margin: 0 30px;
+
+    @include media-laptops {
+        padding-left: 100px;
+    }
+}
+
+.l-manage__text__content {
+    margin: 30px 0;
+}
+
+// ---------- Menage end ----------
+
+// ---------- Team start ----------
+.l-team {
+    padding: 90px 0;
+}
+
+.l-team__text {
+    margin: 25px;
+}
+
+.l-team__members {
+    display: grid;
+    grid-template-columns: $size-team-members-column-width-mobile;
+    grid-gap: 30px;
+    justify-content: center;
+    margin: 50px 0;
+
+    @include media-laptops {
+        grid-template-columns: repeat(3, $size-team-members-column-width);
+    }
+}
+
+.l-team__member {
+    border: 2px solid $color-gray-brighter;
+    padding: 45px;
+
+    &:hover {
+        border: none;        
+        @include box-shadow(0px, 0px, 5px, 0px, rgba(0,0,0,0.1));
+    }
+}
+
+.l-member__name {
+    margin: 30px auto;
+
+    @include media-tablets {
+        margin: 30px;
+    }
+}
+
+.l-member__text {
+    margin: 25px 0 45px;
+}
+
+.l-member__social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, $size-member-social-icons-column-width);
+    justify-content: center;
+}
+
+.l-member__social-icon {
+    display: grid;
+    justify-content: center;
+}
+
+// ---------- Team end ----------
+
+// ---------- Stats start ----------
+.l-stats {
+    display: grid;
+    background: url("../images/bg-grey-mouse.jpg");
+    height: $size-stats-height;
+    color: $color-gray-brighter;
+}
+
+.l-stats__items {
+    display: grid;
+    grid-template-columns: repeat(2, $size-stats-items-column-width);
+    grid-gap: 25px;
+
+    @include media-laptops {
+        grid-template-columns: repeat(4, $size-stats-items-column-width);
+    }
+}
+
+.l-stats__items_item {
+    display: grid;
+    align-self: center;
+    transform: skewx(-25deg);
+    
+    @include media-laptops {
+        border-right: 2px solid $color-gray-darker;
+        padding: 60px;
+    }
+}
+
+.l-stats__items_item:nth-last-child(1) {
+    border-right: none;
+}
+
+.l-stats__item__text {
+    transform: skewx(25deg);
+    margin: 10px 0;
+}
+
+.l-stats__text__numbers{ 
+    margin-bottom: 30px;
+}
+
+// ---------- Stats end ----------
+
+// ---------- Contact start ----------
+.l-contact {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background: url("../images/bg-white-apartment-with-flower.jpg") no-repeat center;
+    height: $size-contact-height;
+}
+
+.l-contact__headline {
+    color: $color-gray-darker;
+    margin: 40px 0;
+}
+
+.l-contact__input {
+    width: $size-contact-input-width-mobiles;
+    margin: 20px;
+    border-bottom: 2px solid $color-gray;
+    background-color: transparent;
+    padding-bottom: 10px;
+    
+    @include media-tablets {
+        width: $size-contact-input-width-desctops;
+    }
+}
+
+.l-contact__input--message {
+    width: $size-contact-input-message-width-mobiles;
+
+    @include media-tablets {
+        width: $size-contact-input-message-width-desctops;
+    }
+}
+
+.l-contact__btn {
+    display: grid;
+    margin: 0 auto;
+}
+
+// ---------- Contact end ----------

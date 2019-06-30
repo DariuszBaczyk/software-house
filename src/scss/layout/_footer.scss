@@ -1,0 +1,12 @@
+.l-footer {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    background-color: $color-gray-darkest;
+    height: 200px;
+    color: $color-gray;
+}
+
+.l-footer__text {
+    margin-top: 50px;
+}

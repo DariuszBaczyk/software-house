@@ -1,0 +1,34 @@
+.l-header {
+    display: grid;
+    height: $size-hero-area;
+    background-color: $color-purple;
+}
+
+.l-header__logo {
+    margin: 25px 0 0 10px;
+}
+
+.l-header__main-headline {
+    display: grid;
+    width: $size-header-main-headline-width-mobile;
+    height: $size-header-main-headline-height;
+    align-content: center;
+    justify-self: center;
+    margin: 10px;
+
+    @include media-tablets {
+        width: $size-header-main-headline-width-tablets;
+    }
+
+    @include media-laptops {
+        width: $size-header-main-headline-width-laptops;
+    }
+
+    @include media-desctops {
+        width: $size-header-main-headline-width-desctops;
+    }
+}
+
+.l-header__button {
+    margin-top: 30px;
+}

@@ -1,0 +1,12 @@
+.c-btn {
+    width: 140px;
+    border-radius: 50px;
+    border-style: none;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.c-btn--orange {
+    background-color: $color-orange;
+    color: $color-white;
+}
